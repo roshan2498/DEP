@@ -1,17 +1,4 @@
-/* Fonts */
-@import url("https://fonts.googleapis.com/css?family=Fira+Sans:400,500,600,700,800");
-@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;1,100&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300&display=swap");
-
-/* CSS Reset */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
+@import url(variables.css);
 /* Typography */
 
 h5 {
@@ -48,14 +35,15 @@ hr {
 /* Main Content Header */
 section {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  border-bottom: 1px solid #000;
   align-items: center;
-  padding: 30px;
+  padding: 20px;
   text-align: left;
   font-family: "Roboto", sans-serif;
   color: #2c4d4d;
+  margin-bottom: 2rem;
 }
-
 
 .container{
   margin-inline: auto;
@@ -69,7 +57,8 @@ img {
 
 article {
   max-width: 90rem;
-  margin: 0 auto;
+  margin-inline: auto;
+  margin-top:10px;
   display: flex;
   justify-content: space-around;
   transition: box-shadow 0.3s ease-in-out;
@@ -83,6 +72,15 @@ article:hover {
 }
 .column {
   padding: 15px;
+}
+
+.text{
+  text-overflow: ellipsis;
+  word-wrap: break-word;
+  max-height: calc(1.7em*4);
+  line-height: 1.7em;
+  overflow: hidden;
+  text-align: justify;
 }
 
 footer {
@@ -132,6 +130,9 @@ select {
   border-radius: 10px;
 }
 
+#email{
+  display: flex;
+}
 .subscribe input {
   width: 180px;
   height: 40px;
