@@ -1,3 +1,4 @@
+/* Fonts */
 @import url("https://fonts.googleapis.com/css?family=Fira+Sans:400,500,600,700,800");
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;1,100&display=swap");
@@ -48,6 +49,7 @@ hr {
 section {
   display: flex;
   justify-content: space-around;
+  align-items: center;
   padding: 30px;
   text-align: left;
   font-family: "Roboto", sans-serif;
