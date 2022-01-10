@@ -1,0 +1,8 @@
+<div class="container" *ngFor="let user of users">
+    <div class="card m-3" *ngIf="user.isDeleted == true">
+        <div class="card-body" style="background-color: rgb(255, 140, 140);">
+            <h5 class="card-title">{{user.firstName +' '+ user.lastName}}</h5>
+            <a (click)="changeStatus(user)" class="btn btn-success">Activate</a>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,13 @@
+<div class="container row g-2" style="margin-inline:auto;">
+    <div class="col-md-8">
+        <div class="card m-3 w-50" *ngFor="let user of users">
+            <div class="card-body" [ngClass]="getStyle(user)">
+                <h5 class="card-title">{{user.firstName +' '+ user.lastName}}</h5>
+                <a (click)="preview(user)" class="btn btn-primary">Details</a>
+            </div>
+        </div>
+    </div>
+    <div class="container col-4">
+        <app-preview *ngIf="toPreview == true" [user]="selectedUser"></app-preview>
+    </div>
+</div>

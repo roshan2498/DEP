@@ -1,0 +1,14 @@
+.bold {
+  font-weight: bold;
+  margin-right: 15px;
+}
+
+.active {
+  font-weight: bold;
+  color: green;
+}
+
+.deleted {
+  font-weight: bold;
+  color: red;
+}

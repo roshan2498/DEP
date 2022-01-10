@@ -1,0 +1,7 @@
+.active {
+  background-color: rgb(149, 248, 149);
+}
+
+.deleted {
+  background-color: rgb(255, 140, 140);
+}
