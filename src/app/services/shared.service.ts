@@ -74,7 +74,6 @@ export class SharedService {
     }
   ]
 
-  selectedUser: User = {} as User;
   toPreview: Boolean = false;
   changeStatus(user: User) {
     user.isDeleted = !user.isDeleted;
