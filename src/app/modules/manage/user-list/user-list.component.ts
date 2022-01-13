@@ -5,13 +5,12 @@ import { SharedService } from 'src/app/services/shared.service';
 @Component({
   selector: 'app-user-list',
   templateUrl: './user-list.component.html',
-  styleUrls: ['./user-list.component.css']
+  styleUrls: ['./user-list.component.css'],
 })
 export class UserListComponent implements OnInit {
-  constructor(private sharedService: SharedService) { }
+  constructor(private sharedService: SharedService) {}
 
-  ngOnInit(): void {
-  }
+  ngOnInit(): void {}
 
   users: User[] = this.sharedService.users;
   selectedUser: User = {} as User;
@@ -20,9 +19,8 @@ export class UserListComponent implements OnInit {
   preview(user: User) {
     this.selectedUser = user;
     this.toPreview = true;
-    this.sharedService.selectedUser = this.selectedUser;
     this.sharedService.toPreview = this.toPreview;
-    console.log(this.toPreview, this.selectedUser)
+    console.log(this.toPreview, this.selectedUser);
   }
 
   getStyle(user: User): string {
