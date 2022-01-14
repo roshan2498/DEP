@@ -13,10 +13,10 @@ function add(args) {
 }
 
 function sub(args) {
-    var res = parseInt(args[2]);
-    for (i = 3; i < args.length; i++) {
-        res -= parseInt(args[i]);
+    if (args.length != 4) {
+        return (new Error('invalid number of operands'));
     }
+    var res = parseInt(args[2]) - parseInt(args[3]);
     return res;
 }
 function multiply(args) {
