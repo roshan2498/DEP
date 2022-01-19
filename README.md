@@ -1,1 +1,1 @@
-All DEP Codes 2021.
+CodeWars Solutions.
