@@ -1,0 +1,31 @@
+GET http://localhost:8080/api/users
+
+###
+
+GET http://localhost:8080/api/users/2
+
+###
+DELETE http://localhost:8080/api/users/3
+
+###
+POST http://localhost:8080/api/users
+Content-Type: application/json
+
+{
+    "id": 6,
+    "login": "user6",
+    "password": "user6",
+    "age": 50,
+    "isDeleted": true
+}
+
+###
+PUT http://localhost:8080/api/users/3
+Content-Type: application/json
+
+{
+    "login": "roshan",
+    "password": "roshan",
+    "age": 30,
+    "isDeleted": false
+}
