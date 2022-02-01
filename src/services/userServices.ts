@@ -1,6 +1,8 @@
 import { Request, Response } from "express";
 import { User } from "../models/user";
 import { v4 as uuidv4 } from "uuid";
+import { UserSchema } from "./schema_validation";
+import Joi from "joi";
 
 export const getAllUsers = async (req: Request, res: Response) => {
   try {
@@ -14,6 +16,7 @@ export const getAllUsers = async (req: Request, res: Response) => {
 export const createUser = async (req: Request, res: Response) => {
   try {
     const { firstName, lastName, age, login, password } = req.body;
+    await UserSchema.validateAsync(req.body);
     await User.create({
       id: uuidv4(),
       firstName,
@@ -38,15 +41,20 @@ export const getUserById = async (req: Request, res: Response) => {
       res.status(404).json({ message: "User not found!" });
     }
   } catch (err: any) {
-    res.status(500).json({ err: err.message });
+    if (err.isJoi === true) {
+      res.status(422).json({ err: err.message });
+    } else {
+      res.status(500).json({ err: err.message });
+    }
   }
 };
 
 export const updateUser = async (req: Request, res: Response) => {
   try {
     const { firstName, lastName, age, login, password } = req.body;
+    const result = await UserSchema.validateAsync(req.body);
     await User.update(
-      { firstName, lastName, age, login },
+      { firstName, lastName, age, login, password },
       { where: { id: req.params.id } }
     );
     res.status(200).json({ message: "User Updated!" });
