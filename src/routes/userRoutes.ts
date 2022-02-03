@@ -1,4 +1,5 @@
 import express, { Router } from "express";
+import { bodyValidator } from "../middlewares/validation";
 
 import {
   getAllUsers,
@@ -10,9 +11,15 @@ import {
 
 const router: Router = express.Router();
 
-router.route("/users").get(getAllUsers);
-router.route("/users").post(createUser);
-router.route("/users/:id").get(getUserById);
-router.route("/users/:id").put(updateUser);
-router.route("/users/:id").delete(deleteUser);
+// Get All Users
+router.get("/users", getAllUsers);
+// Create New User
+router.post("/users", bodyValidator, createUser);
+// Get User By Id
+router.get("/users/:id", getUserById);
+// Update User By Id
+router.put("/users/:id", bodyValidator, updateUser);
+// Delete User
+router.delete("/users/:id", deleteUser);
+
 export default router;
