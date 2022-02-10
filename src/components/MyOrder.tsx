@@ -5,14 +5,15 @@ import { getMyOrders } from "../redux/ducks/order";
 export const MyOrder = () => {
   const dispatch = useDispatch();
   const orders = useSelector((state: any) => state.order);
+  console.log(orders);
+
   useEffect(() => {
     dispatch(getMyOrders());
-  });
+  }, []);
 
   return (
-    <div>
-      <h1>My Orders</h1>
-      {JSON.stringify(orders)}
+    <div className="container">
+      <p>{JSON.stringify(orders)}</p>
     </div>
   );
 };
