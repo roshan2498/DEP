@@ -1,36 +1,46 @@
-# All DEP Codes 2021.
+# Getting Started with Create React App
 
-| SNo. | Hometask Description                                                                                                                                                                                                 | Assignment | Link |
-| ---- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :--------: | ---- |
-| 1.1  | HTML5/CSS3 Design                                                                                                                                                                                                    |     Y      |      |
-| 1.2  | Git & Github                                                                                                                                                                                                         |     N      |      |
-| 2.1  | JS Data Types                                                                                                                                                                                                        |     Y      |      |
-| 2.2  | JS Scope and Functions                                                                                                                                                                                               |     Y      |      |
-| 2.3  | JS Dynamic Scope                                                                                                                                                                                                     |     Y      |      |
-| 2.4  | JS Object and Array Prototype                                                                                                                                                                                        |     Y      |      |
-| 2.5  | JS Object Oriented Programming                                                                                                                                                                                       |     Y      |      |
-| 2.6  | JS Async JS(callbacks promises) DOM Events                                                                                                                                                                           |     Y      |      |
-| 2.7  | JS Unit Testing using Jasmine                                                                                                                                                                                        |     Y      |      |
-| 2.8  | ES6 Features                                                                                                                                                                                                         |     Y      |      |
-| 3.1  | Webpack & Babel                                                                                                                                                                                                      |     Y      |      |
-| 4.1  | Angular <br> - Introduction<br> - Architecture<br> - CLI<br> - Typescript                                                                                                                                            |     N      |      |
-| 4.2  | Angular<br> - Setup angular projects<br> - Angular project structure<br> - Components,Modules,Decorators                                                                                                             |     Y      |      |
-| 4.3  | Angular <br> - Data Binding<br> - Event Binding<br> - Custom Property<br> - Content Projection<br> - Element References                                                                                              |     N      |      |
-| 4.4  | Angular<br> - Directives Basics<br> - HostListner,HostBinding<br> - Angular Component Life Cycle Hooks                                                                                                               |     N      |      |
-| 4.5  | Angular<br> - Dependency Injection<br> - Hierarchical Injection<br> - services <br> - @Injectable()                                                                                                                  |     N      |      |
-| 4.6  | Angular<br> - Routing<br> - Lazy Loading Modules                                                                                                                                                                     |     Y      |      |
-| 4.7  | Angular<br> - Observable <br> - Pipes                                                                                                                                                                                |     N      |      |
-| 4.8  | Angular<br> - HTTP Service<br> - Forms<br> - Template Driven<br> - Reactive Forms<br> - Dynamic Forms Thinking                                                                                                       |     Y      |      |
-| 4.9  | Angular<br> - Advanced Routing<br> - Change Detection Strategy<br> - Basics to Animation<br> - PWA<br> - Service Workers<br> - Web Workers<br> - SSR                                                                 |     N      |      |
-| 4.10 | Angular<br> Unit Testing & Deployment                                                                                                                                                                                |     Y      |      |
-| 5.1  | OOPs - Four Pillar of OOPS                                                                                                                                                                                           |     N      |      |
-| 6.1  | React basics,jsx,props,lifecycle                                                                                                                                                                                     |     N      |      |
-| 6.2  | React <br>overview,virtualdom,dev infrastructure,cra                                                                                                                                                                 |     Y      |      |
-| 6.3  | React<br>-Stateless vs Stateful component<br>-Props and State<br>-Lifecycle<br> -Error boundaries                                                                                                                    |     Y      |      |
-| 6.4  | React<br>-Handling Events<br>-SSR<br>-Performance<br>-Flow - static type checker<br>-React Infrastructure<br> - Model Level - flux,redux(store,reducers,actions,async etc.)<br> - React - router<br> - Jest - Enzyme |     Y      |      |
-| 7.1  | Nodejs Basics,Callback,Events,npm,package.json                                                                                                                                                                       |     N      |      |
-| 7.2  | Nodejs Async Dev,Common Modules,Debugging                                                                                                                                                                            |     Y      |      |
-| 7.3  | Nodejs RESTful Web Service,express,middleware                                                                                                                                                                        |     Y      |      |
-| 7.4  | Nodejs SQL Basics,PostgreSQL etc                                                                                                                                                                                     |     Y      |      |
-| 8.1  | Design Principles(SOLID,DRY,Design Patterns)                                                                                                                                                                         |     Y      |      |
-|      |                                                                                                                                                                                                                      |            |      |
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+## Available Scripts
+
+In the project directory, you can run:
+
+### `npm start`
+
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+
+The page will reload if you make edits.\
+You will also see any lint errors in the console.
+
+### `npm test`
+
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+
+### `npm run build`
+
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
+
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
+
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+
+### `npm run eject`
+
+**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+
+If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+
+You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+
+## Learn More
+
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+
+To learn React, check out the [React documentation](https://reactjs.org/).

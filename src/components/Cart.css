@@ -1,0 +1,22 @@
+.cart-container {
+  grid-template-columns: 1fr;
+}
+.cart-item {
+  display: flex;
+  border: 2px solid red;
+  border-radius: 10px;
+  width: 400px;
+}
+
+.cart-item img {
+  width: 100px;
+}
+
+.remove {
+  margin-left: 0;
+}
+
+.checkout {
+  width: 30%;
+  margin-left: 0;
+}
